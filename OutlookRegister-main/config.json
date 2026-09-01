@@ -1,0 +1,45 @@
+{
+    "choose_browser": "patchright",
+    "choosed_mail": "moemail",
+    "email_suffix": "@outlook.com",
+    "proxy": "http://127.0.0.1:7897",
+    "bot_protection_wait": 16,
+    "max_captcha_retries": 3,
+    "concurrent_flows": 3,
+    "max_tasks": 5,
+    "oauth2": {
+        "enable_oauth2": false,
+        "client_id": "",
+        "redirect_url": "",
+        "Scopes": [
+            "offline_access",
+            "https://graph.microsoft.com/Mail.ReadWrite",
+            "https://graph.microsoft.com/Mail.Send",
+            "https://graph.microsoft.com/User.Read"
+        ]
+    },
+    "playwright": {
+        "browser_path": ""
+    },
+    "moemail": {
+        "apikey": "",
+        "base_url": "",
+        "expire_time": 3600000,
+        "max_request_retries": 5,
+        "suffix": ""
+    },
+    "outlookgraph":{
+        "strategy": "file",
+        "max_request_retries": 5,
+        "client_id": "",
+        "single_email": {
+            "email": "",
+            "refresh_token": ""
+        },
+        "file": {
+            "path": "Results/recovery_pool.txt"
+        }
+    },
+
+    "info": "请本地搭建代理池并选择一种辅助邮箱方式填写完整设置.playwright可用性较差.并且使用playwright指纹浏览器要能过https://www.browserscan.net,否则请使用patchright."
+}
